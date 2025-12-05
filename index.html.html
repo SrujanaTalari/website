@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    window.onload = function() {
+      let base = "https://krish.com/services/";
+      let service = "app-development";
+      let url = base + encodeURIComponent(service);
+      console.log(url);
+    };
+  </script>
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; }
+    header { background:pink; color:#fff; padding:20px; text-align:center; }
+    nav { background:#40916c; padding:10px; text-align:center; }
+    nav a { color:#fff; margin:0 10px; text-decoration:none; }
+    section { padding:20px; }
+    footer { background:pink; color:#000; text-align:center; padding:10px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Website</h1>
+    <p>A simple starter template</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <h2>Submit Your Content</h2>
+  <form action="submit.php" method="POST">
+    <label for="name">Your Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Your Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="content">Content:</label><br>
+    <textarea id="content" name="content" rows="6" cols="40" required></textarea><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <section id="services">
+    <h2>Services</h2>
+    <p>We can provide services...</p>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+    </ul>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! This is Talari. I love bringing ideas to life with creativity and code, making the digital world a little brighter.</p>
+    <h3>About My Project</h3>
+    <p>A little website with big dreams.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: srujanatalari65@gmail.com</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Krish Web Solutions</p>
+  </footer>
+</body>
+</html>
